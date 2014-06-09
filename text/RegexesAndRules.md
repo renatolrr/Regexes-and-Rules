@@ -10,3 +10,23 @@ Una vez que el proceso de las RFC se completó, Wall revisó y clasificó cada p
 Existen también una serie de Exégesis escritas por Damian Conway que explican los contenidos de cada Apocalipsis en términos de uso práctico. Cada Exégesis contiene ejemplos de código junto con la discusión del uso y las implicaciones de los ejemplos.
 
 Fuente: http://es.wikipedia.org/wiki/Perl_6
+
+
+
+##Enlaces
+
+"Apocalypse 5: Pattern Matchin": http://www.perl6.org/archive/doc/design/apo/A05.html
+
+"Exegesis 5: Pattern Matching": http://www.perl6.org/archive/doc/design/exe/E05.html
+
+"Synopsis 5: Regexes and Rules":  http://perlcabal.org/syn/S05.html
+
+"Introduction to Perl 6 Regex":  https://github.com/perlpilot/perl6-docs/blob/master/intro/p6-regex-intro.pod
+
+"Regexes -- Pattern matching against strings": http://doc.perl6.org/language/regexes
+
+"Perl 5 to Perl 6": http://perlgeek.de/en/article/5-to-6
+
+"Perl 6 and Parrot Essentials, 2nd Edition": http://shop.oreilly.com/product/9780596007379.do
+ 
+ 
