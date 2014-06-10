@@ -136,11 +136,11 @@ Table 8. Backtracking controls
 |:        |Don't retry the previous atom; fail to the next earlier atom.        |
 |::        |Don't backtrack over this point; fail out of the closest enclosing group (( . . . ), [ . . . ], or the rule delimiters).        |
 |:::        |Don't backtrack over this point; fail out of the current rule or        |
-|<commit>        |Don't backtrack over this point; fail out of the entire match (even from within a subrule).        |
-|<cut>        |Like <commit>, but also cuts the string matched. The current matching position at this point becomes the new beginning of the string.        |
+|\<commit>        |Don't backtrack over this point; fail out of the entire match (even from within a subrule).        |
+|\<cut>        |Like <commit>, but also cuts the string matched. The current matching position at this point becomes the new beginning of the string.        |
 |
 
-
+Fuente: "Perl 6 and Parrot Essentials, 2nd Edition": http://shop.oreilly.com/product/9780596007379.do
 
 
 
