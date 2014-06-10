@@ -19,7 +19,7 @@ Symbol
 |$       |Match the end of a string.        |
 |^^       |Match the beginning of a line.        |
 |$$        | Match the end of a line.       |
-|\|. |Match alternate patterns (OR).        |
+|\|.    |Match alternate patterns (OR).        |
 |&       |Match multiple patterns (AND).        |
 |\       |Escape a metacharacter to get a literal character, or escape a literal character to get a metacharacter.        |
 |#       |Mark a comment (to the end of the line).        |
