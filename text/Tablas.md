@@ -21,7 +21,7 @@ Symbol
 |$$        | Match the end of a line.       |
 |        |Match alternate patterns (OR).        |
 |&       |Match multiple patterns (AND).        |
-|\       |Escape a metacharacter to get a literal character, or escape a literal character to get a metacharacter.        |
+|\\       |Escape a metacharacter to get a literal character, or escape a literal character to get a metacharacter.        |
 |#       |Mark a comment (to the end of the line).        |
 |:=        | Bind the result of a match to a hypothetical variable.       |
 |( . . . )       |Group patterns and capture the result.        |
@@ -70,9 +70,9 @@ Table 4. Quantifiers
 |*        |*?        |Match 0 or more times.|
 |+        |+?        |Match 1 or more times.|
 |?        |??        |Match 0 or 1 times.|
-|<n>       |<n>?        |Match exactly n times.|
-|<n..m>        |<n..m>?        |Match at least n and no more than m times.|
-|<n . . . >        |<n . . . >?        |Match at least n times.|
+|\<n>       |\<n>?        |Match exactly n times.|
+|\<n..m>        |\<n..m>?        |Match at least n and no more than m times.|
+|\<n . . . >        |\<n . . . >?        |Match at least n times.|
 
 Table 5. Assertions
 Syntax
@@ -81,9 +81,9 @@ Syntax
 |--------|--------|
 |< . . . >        |Generic assertion delimiter.        |
 |<! . . . >        |Negate any assertion.        |
-|<name>        |Match a named rule or character class.        |
+|\<name>        |Match a named rule or character class.        |
 |<[ . . . ]>        |Match an enumerated character class.        |
-|<- . . . >        |Complement a character class (named or enumerated).        |
+|\<- . . . >        |Complement a character class (named or enumerated).        |
 |<" . . . ">        |Match a literal string (interpolated at match time).        |
 |<' . . . '>        |Match a literal string (not interpolated).        |
 |<( . . . )>        |Boolean assertion. Execute a closure and match if it returns a true result.        |
@@ -118,16 +118,16 @@ Table 7. Built-in rules
 
 |Rule |Meaning  |
 |--------|--------|
-|<alpha>        |Match a Unicode alphabetic character.        |
-|<digit>        |Match a Unicode digit.        |
-|<sp>        |Match a single-space character (the same as \s).        |
-|<ws>        |Match any whitespace (the same as \s+).        |
-|<null>        |Match the null string.        |
-|<prior>        |Match the same thing as the previous match.        |
-|<before . . . >        |Zero-width lookahead. Assert that you're before a pattern.        |
-|<after . . . >        |Zero-width lookbehind. Assert that you're after a pattern.        |
-|<prop . . . >        |Match any character with the named property.        |
-|<replace( . . . )>        |Replace everything matched so far in the rule or subrule with the given string (under consideration).        |
+|\<alpha>        |Match a Unicode alphabetic character.        |
+|\<digit>        |Match a Unicode digit.        |
+|\<sp>        |Match a single-space character (the same as \s).        |
+|\<ws>        |Match any whitespace (the same as \s+).        |
+|\<null>        |Match the null string.        |
+|\<prior>        |Match the same thing as the previous match.        |
+|\<before . . . >        |Zero-width lookahead. Assert that you're before a pattern.        |
+|\<after . . . >        |Zero-width lookbehind. Assert that you're after a pattern.        |
+|\<prop . . . >        |Match any character with the named property.        |
+|\<replace( . . . )>        |Replace everything matched so far in the rule or subrule with the given string (under consideration).        |
 
 Table 8. Backtracking controls
 
