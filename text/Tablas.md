@@ -19,9 +19,9 @@ Symbol
 |$       |Match the end of a string.        |
 |^^       |Match the beginning of a line.        |
 |$$        | Match the end of a line.       |
-|        |Match alternate patterns (OR).        |
+|\|        |Match alternate patterns (OR).        |
 |&       |Match multiple patterns (AND).        |
-|\\       |Escape a metacharacter to get a literal character, or escape a literal character to get a metacharacter.        |
+|\       |Escape a metacharacter to get a literal character, or escape a literal character to get a metacharacter.        |
 |#       |Mark a comment (to the end of the line).        |
 |:=        | Bind the result of a match to a hypothetical variable.       |
 |( . . . )       |Group patterns and capture the result.        |
@@ -137,8 +137,7 @@ Table 8. Backtracking controls
 |::        |Don't backtrack over this point; fail out of the closest enclosing group (( . . . ), [ . . . ], or the rule delimiters).        |
 |:::        |Don't backtrack over this point; fail out of the current rule or        |
 |\<commit>        |Don't backtrack over this point; fail out of the entire match (even from within a subrule).        |
-|\<cut>        |Like <commit>, but also cuts the string matched. The current matching position at this point becomes the new beginning of the string.        |
-|
+|\<cut>        |Like \<commit>, but also cuts the string matched. The current matching position at this point becomes the new beginning of the string.        |
 
 Fuente: "Perl 6 and Parrot Essentials, 2nd Edition": http://shop.oreilly.com/product/9780596007379.do
 
