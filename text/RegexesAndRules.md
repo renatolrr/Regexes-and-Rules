@@ -65,6 +65,62 @@ say $spacey.subst(rx/ \s+/, '',:g);
 
 
 ##Grammars
+### Introducción
+
+This behavior is quite different from Perl 5 semantics: 
+      # Perl 5...
+      #
+      # $1---------------------  $4---------  $5------------------
+      # |   $2---------------  | |          | | $6----  $7------  |
+      # |   |         $3--   | | |          | | |     | |       | |
+      # |   |         |   |  | | |          | | |     | |       | |
+     m/ ( A (guy|gal|g(\S+)  ) ) (sees|calls) ( (the|a) (gal|guy) ) /x;
+In Perl 6, nested parens produce properly nested captures: 
+      # Perl 6...
+      #
+      # $0---------------------  $1---------  $2------------------
+      # |   $0[0]------------  | |          | | $2[0]-  $2[1]---  |
+      # |   |       $0[0][0] | | |          | | |     | |       | |
+      # |   |         |   |  | | |          | | |     | |       | |
+     m/ ( A (guy|gal|g(\S+)  ) ) (sees|calls) ( (the|a) (gal|guy) ) /;
+
+### Ejemplo
+```
+#!/usr/bin/perl6
+use v6;
+grammar URL {
+        token TOP {
+            <schema> '://' 
+            [<ip> | <hostname> ]
+            [ ':' <port>]?
+            '/' <path>?
+        }
+        token byte {
+            (\d**1..3) <?{ $0 < 256 }>
+        }
+        token ip {
+            <byte> [\. <byte> ] ** 3
+        }
+        token schema {
+            \w+
+        }
+        token hostname {
+            (\w+) ( \. \w+ )*
+        }
+        token port {
+            \d+
+        }
+        token path {
+            <[ a..z A..Z 0..9 \-_.!~*'():@&=+$,/ ]>+
+        }
+    }
+
+    my $match = URL.parse('http://perl6.org/documentation/');
+    say $match<path>;       # perl6.org
+```
+
+Rules  
+Token  
 
 
 

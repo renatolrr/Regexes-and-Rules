@@ -1,0 +1,78 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+    background: #000;
+}
+
+.step {
+    position: relative;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.impress-enabled .step {
+    margin: 0;
+}
+
+.impress-enabled .step.active { opacity: 1;border:none; }
+
+.slide {
+    display: block;
+    width: 600px;
+    padding: 100px 200px;
+    height: 500px;
+    color:#fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+}
+.slide li{
+	text-align:left;
+}
+
+A:link {text-decoration:none;color:#ffffff;}
+
+
+A:visited {text-decoration:none;color:#ffffff;} 
+
+
+
+/*
+    The last step is an overview.
+    There is no content in it, so we make sure it's not visible because we want
+    to be able to click on other steps.
+
+*/
+#overview { display: none }
+
+/*
+    We also make other steps visible and give them a pointer cursor using the
+    `impress-on-` class.
+*/
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+

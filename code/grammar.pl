@@ -1,8 +1,5 @@
 #!/usr/bin/perl6
-
 use v6;
-
-
 grammar URL {
         token TOP {
             <schema> '://' 
@@ -16,7 +13,7 @@ grammar URL {
         token ip {
             <byte> [\. <byte> ] ** 3
         }
-        token schema {
+        rule schema {
             \w+
         }
         token hostname {
@@ -31,7 +28,7 @@ grammar URL {
     }
 
     my $match = URL.parse('http://perl6.org/documentation/');
-    say $match<path>;       # perl6.org
+    say $match<schema>;       # perl6.org
     
     
 
