@@ -7,66 +7,27 @@ El proceso de diseño de Perl 6 fue anunciado por primera vez el 19 de julio de 
 
 Una vez que el proceso de las RFC se completó, Wall revisó y clasificó cada petición. Empezó entonces el proceso de escribir los "Apocalipsis", un término que se refiere a la "revelación".10 Mientras que el objetivo original era escribir un Apocalipsis por cada capítulo de Programming Perl, a medida que se iba escribiendo cada uno, se hizo obvio que los previos iban siendo invalidados por los cambios posteriores. Por esta razón, se publicaron un conjunto de Sinopsis, cada una relacionada con los contenidos de un Apocalipsis, pero reflejando los cambios posteriores. Hoy, la especificación de Perl 6 continua casi de forma completa dentro de las Sinopsis.
 
-Existen también una serie de Exégesis escritas por Damian Conway que explican los contenidos de cada Apocalipsis en términos de uso práctico. Cada Exégesis contiene ejemplos de código junto con la discusión del uso y las implicaciones de los ejemplos."
+Existen también una serie de Exégesis escritas por Damian Conway que explican los contenidos de cada Apocalipsis en términos de uso práctico. Cada Exégesis contiene ejemplos de código junto con la discusión del uso y las implicaciones de los ejemplos.
 
 Fuente: http://es.wikipedia.org/wiki/Perl_6
 
 ##Sinopsis S05
 
-Título:  
+Título:
 "Synopsis 5: Regexes and Rules"
 
-Autores:  
-    Damian Conway <damian@conway.org>  
-    Allison Randal <al@shadowed.net>  
-    Patrick Michaud <pmichaud@pobox.com>  
-    Larry Wall <larry@wall.org>  
-    Moritz Lenz <moritz@faui2k3.org>  
-    Tobias Leich <email@froggs.de>  
+Autores:
+    Damian Conway <damian@conway.org>
+    Allison Randal <al@shadowed.net>
+    Patrick Michaud <pmichaud@pobox.com>
+    Larry Wall <larry@wall.org>
+    Moritz Lenz <moritz@faui2k3.org>
+    Tobias Leich <email@froggs.de>
 
-Versión:  
+Versión:
     Created: 24 Jun 2002
     Last Modified: 27 Feb 2014
     Version: 175
-
-## Una parada ~
-
-### Como operador.
-El operador ~ se utiliza para concatenar cadenas, ya no se usa . que se deja para las clases. Y tambien se utiliza ~= para concatenar a la derecha de la cadena:
-
-```
-$line = "The quick brown " ~ $fox ~ jumps_over( ) ~ " the lazy " ~ $dog; 
-$line ~= "Belgium"; # appends to the string
-```
-###  Como operador binario.
-
-El operador binario ~~, hace busquedas en los dos terminos, y nos devuelve "true" si se ha encontrado.
-
-##Regexes, en vez de regex.
-
-### Explicación, buscando patrones.  
-Síntasis más clara.  
-Necesidad de capturar y encontrar objetos.  
-Nombrando "regexes" y "grammars"
-
-
-Tablas.  
-
-Modificadores.  
-
-
-Sustitución:
-
-```
-my $spacey = 'with   many spaces';` 
-say $spacey.subst(rx/ \s+/, '',:g);  
-\# output: with many superfluous spaces  
-```
-
-
-##Grammars
-
-
 
 
 
