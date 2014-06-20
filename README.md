@@ -30,3 +30,7 @@ Estructura:
 - impress
 
 Licencia:
+All material in this repository is licensed under a CC-by-nc-sa
+license: <http://creativecommons.org/licenses/by-nc-sa/2.5/>
+(attribution, noncommercial, share-alike), unless explicitly stated
+otherwise.

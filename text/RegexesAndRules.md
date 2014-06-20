@@ -62,7 +62,7 @@ El operador binario ~~, hace busquedas en los dos terminos, y nos devuelve "true
 
 ### Diferencia.
 
-
+No se utiliza ni PCRE ( Perl compatible Regular Espressions) ni POSIX (Portable Operating System Interface for Unix).
 
 ### Explicación, buscando patrones.  
 Síntasis más clara.  
