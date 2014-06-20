@@ -42,13 +42,27 @@ body {
     width: 600px;
     padding: 100px 200px;
     height: 500px;
-    color:#fff;
+    color:#ffff00;
     text-align: center;
     vertical-align: middle;
     font-size: 30px;
 }
 .slide li{
 	text-align:left;
+}
+
+.slide h1{
+    color:#00ff00;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+}
+.slide h2{
+    color:#ff00ff;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 30px;
+}
 }
 
 A:link {text-decoration:none;color:#ffffff;}
