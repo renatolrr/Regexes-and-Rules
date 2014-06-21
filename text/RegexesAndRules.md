@@ -87,6 +87,7 @@ say $spacey.subst(rx/ \s+/, '',:g);
 ### Introducción.
 
 This behavior is quite different from Perl 5 semantics: 
+```
       # Perl 5...
       #
       # $1---------------------  $4---------  $5------------------
@@ -94,7 +95,9 @@ This behavior is quite different from Perl 5 semantics:
       # |   |         $3--   | | |          | | |     | |       | |
       # |   |         |   |  | | |          | | |     | |       | |
      m/ ( A (guy|gal|g(\S+)  ) ) (sees|calls) ( (the|a) (gal|guy) ) /x;
+```
 In Perl 6, nested parens produce properly nested captures: 
+```
       # Perl 6...
       #
       # $0---------------------  $1---------  $2------------------
@@ -102,7 +105,7 @@ In Perl 6, nested parens produce properly nested captures:
       # |   |       $0[0][0] | | |          | | |     | |       | |
       # |   |         |   |  | | |          | | |     | |       | |
      m/ ( A (guy|gal|g(\S+)  ) ) (sees|calls) ( (the|a) (gal|guy) ) /;
-
+```
 ### Ejemplo.
 ```
 #!/usr/bin/perl6
