@@ -34,7 +34,7 @@ Versión:
 Perl 5 y perl6 son dos lenguajes diferentes, con una sintasis y semantica diferente, pero es que Perl:
 
 Filosofía: "hay más de un camino para hacerlo", " las cosas faciles..."  
-Custom: Test  
+Custom 
 Un edificio: Cpan  
 Una comunidad:   
 
@@ -150,7 +150,7 @@ Token
 
 ## Perl6::Rules
 
-Deficiencias.
+Diferencias.
 
 
 
