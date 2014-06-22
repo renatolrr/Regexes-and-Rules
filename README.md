@@ -21,6 +21,7 @@ Puntos a tocar:
 - - Ejemplo.
 - - Modulos y utilización de grammars.
 - Perl6::Rules
+- - Limitaciones.
 - Enlaces.
 
 Estructura:

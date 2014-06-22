@@ -45,7 +45,8 @@ Distintas implementaciones de perl
 
 ### Espacios.
 
-Funciones
+Funciones.
+Regex.
 
 ### ~ Como operador.
 El operador ~ se utiliza para concatenar cadenas, ya no se usa . que se deja para las clases. Y tambien se utiliza ~= para concatenar a la derecha de la cadena:
@@ -86,7 +87,7 @@ say $spacey.subst(rx/ \s+/, '',:g);
 ##Grammars.
 ### Introducción.
 
-This behavior is quite different from Perl 5 semantics: 
+Perl 5: 
 ```
       # Perl 5...
       #
@@ -96,7 +97,7 @@ This behavior is quite different from Perl 5 semantics:
       # |   |         |   |  | | |          | | |     | |       | |
      m/ ( A (guy|gal|g(\S+)  ) ) (sees|calls) ( (the|a) (gal|guy) ) /x;
 ```
-In Perl 6, nested parens produce properly nested captures: 
+Perl 6: 
 ```
       # Perl 6...
       #
@@ -150,7 +151,7 @@ Token
 
 ## Perl6::Rules
 
-Diferencias.
+Limitaciones.
 
 
 
