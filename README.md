@@ -31,7 +31,6 @@ Estructura:
 - impress
 
 Licencia:
-All material in this repository is licensed under a CC-by-nc-sa
-license: <http://creativecommons.org/licenses/by-nc-sa/2.5/>
-(attribution, noncommercial, share-alike), unless explicitly stated
-otherwise.
+
+
+Todo el material de este repositorio está bajo licencia: Reconocimiento – CompartirIgual (by-sa): Se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.
